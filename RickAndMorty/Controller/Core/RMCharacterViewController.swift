@@ -14,6 +14,10 @@ final class RMCharacterViewController: UIViewController {
         
         view.backgroundColor = .systemBackground
         title = "Character"
+        
+        let Request = RMRequest(endpoint: .character)
+        
+        print(Request.url)
 
        
     }

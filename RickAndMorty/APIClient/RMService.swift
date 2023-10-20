@@ -9,7 +9,16 @@ import Foundation
 final class RMService {
     static let shared = RMService()
     
-    public func excute(_ request : RMRequest ,completion :@escaping ()-> Void){
+    //privatized Constructor
+    private init(){
+        
+    }
+    //Send RickAndMorty an Api Call
+    ///-Parameter
+    ///  request : Request instance
+    ///    type : type of object we ecpec to get back
+    ///    completion :  Callback with data or error
+    public func excute<T: Codable>(_ request : RMRequest , expecting type : T.Type ,completion :@escaping ()-> Void){
         
     }
 }
